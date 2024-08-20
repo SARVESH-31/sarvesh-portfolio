@@ -14,32 +14,32 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 // about data
 const about = {
   title: "About me",
-  description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+  // description:
+  //   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
   info: [
     {
       fieldName: "Name",
-      fieldValue: "Luke Coleman",
+      fieldValue: "Sarvesh Kadam",
     },
     {
       fieldName: "Phone",
-      fieldValue: "(+40) 321 654 678",
+      fieldValue: "(+91) 7588277703",
     },
     {
       fieldName: "Experience",
-      fieldValue: "12+ Years",
+      fieldValue: "2+ Years",
     },
     {
       fieldName: "Skype",
-      fieldValue: "luke.01",
+      fieldValue: "ive:.cid.205d2623d9e243be",
     },
     {
       fieldName: "Nationality",
-      fieldValue: "American",
+      fieldValue: "Indian",
     },
     {
       fieldName: "Email",
-      fieldValue: "luke.01@gmail.com",
+      fieldValue: "kadam.sarvesh3110@gmail.com",
     },
     {
       fieldName: "Freelance",
@@ -47,7 +47,7 @@ const about = {
     },
     {
       fieldName: "Languages",
-      fieldValue: "English, Spanish",
+      fieldValue: "English, Spanish, Hindi, Marathi",
     },
   ],
 };
@@ -57,38 +57,38 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+    "Experienced in developing scalable web applications, customizing Salesforce solutions, optimizing e-commerce sites, and designing intuitive UI/UX as a freelance professional and intern.",
   items: [
     {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
+      company: "PRAGAMANA PRIVATE LIMITED.",
+      position: "Full Stack Developer Intern",
+      duration: "Summer 2024",
     },
     {
-      company: "Web Design Studio",
-      position: "Front-End Developer Intern",
-      duration: "Summer 2021",
+      company: "PwC-India",
+      position: "Salesforce Developer",
+      duration: "2024-Present",
     },
     {
       company: "E-commerce Startup",
       position: "Freelance Web Developer",
-      duration: "2020 - 2021",
+      duration: "2022-2023",
     },
+    // {
+    //   company: "Tech Academy",
+    //   position: "Teaching Assistant",
+    //   duration: "2019 - 2020",
+    // },
     {
-      company: "Tech Academy",
-      position: "Teaching Assistant",
-      duration: "2019 - 2020",
-    },
-    {
-      company: "Digital Agency",
+      company: "Freelancing",
       position: "UI/UX Designer",
-      duration: "2018 - 2019",
+      duration: "2022-2024",
     },
-    {
-      company: "Software Development Firm",
-      position: "Junior Developer",
-      duration: "2017 - 2018",
-    },
+    // {
+    //   company: "Software Development Firm",
+    //   position: "Junior Developer",
+    //   duration: "2017 - 2018",
+    // },
   ],
 };
 
@@ -97,38 +97,29 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+    "Pursuing a B.Tech in Computer Science at VIT Chennai, with additional training in Full Stack Web Development, Data Structures & Algorithms, and AWS Cloud Practitioner certifications.",
   items: [
     {
-      institution: "Online Course Platform",
-      degree: "Full Stack Web Development Bootcamp",
-      duration: "2023",
-    },
-    {
-      institution: "Codecademy",
-      degree: "Front-end Track",
-      duration: "2022",
+      institution: "(VIT),Chennai Campus",
+      degree: "B.Tech Computer Science",
+      duration: "2021 - Present",
     },
     {
       institution: "Online Course",
-      degree: "Programming Course",
-      duration: "2020 - 2021",
+      degree: "Full Stack Web Development",
+      duration: "2023",
     },
     {
-      institution: "Tech Institute",
-      degree: "Certified Web Developer",
-      duration: "2019",
+      institution: "Online Course",
+      degree: "Data Structures Algorithm",
+      duration: "2023 - 2024",
     },
     {
-      institution: "Design School",
-      degree: "Diploma in Graphic Design",
-      duration: "2016 - 2018",
+      institution: "MGrow",
+      degree: "AWS Cloud Practitioner",
+      duration: "2023",
     },
-    {
-      institution: "Community College",
-      degree: "Associate Degree in Computer Science",
-      duration: "2014 - 2016",
-    },
+
   ],
 };
 
@@ -136,7 +127,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+    "Proficient in full-stack development, capable of building and managing complete web applications from front-end to back-end.",
   skillList: [
     {
       icon: <FaHtml5 />,

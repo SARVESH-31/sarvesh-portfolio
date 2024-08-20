@@ -25,33 +25,68 @@ const projects = [
     category: "frontend",
     title: "project 1",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
+      "Designed and developed a user-friendly website clone for VIT Chennai’s Computer Science branch, incorporating advanced features and optimizations to improve functionality, user experience, and overall site performance.",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
     image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+    live: "https://sarvesh-31.github.io/VIT-SCOPE/index.html",
+    github: "https://github.com/SARVESH-31/VIT-SCOPE",
   },
   {
     num: "02",
     category: "fullstack",
     title: "project 2",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
+      "Developed Unity Forum, a community platform where users can create, join, and manage communities with advanced features like infinite scroll, post engagement (likes/dislikes), comment sections, search functionality, and integrated Google Authentication for a secure and seamless user experience.",
+    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "MySQL" }, { name: "ORM: Prisma" }, 
+      { name: "React Query" }, { name: "Caching: Redis" }, { name: "Validation: Zod" }, { name: "React Query" }],
+ 
     image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
+    live: "https://unityforum.vercel.app/",
+    github: "https://github.com/SARVESH-31/UnityForum",
   },
   {
     num: "03",
     category: "frontend",
     title: "project 3",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
+      "A web application that provides real-time weather updates for any city worldwide. Users can search for any city and instantly receive accurate weather information including temperature, humidity, wind speed, and more. The application fetches data using a weather API, ensuring up-to-date information with a user-friendly interface for seamless navigation.",
+    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
     image: "/assets/work/thumb3.png",
+    live: "https://sarvesh-31.github.io/Weather-App/",
+    github: "https://github.com/SARVESH-31/Weather-App",
+  },
+  {
+    num: "04",
+    category: "frontend",
+    title: "project 4",
+    description:
+      "A dynamic platform that allows users to create, read, and update daily blog posts. The website features a clean interface for writing and editing content, making it easy to manage and share ideas. Users can also browse through existing blogs, keeping up with recent posts and updates in a seamless manner.",
+    stack: [{ name: "React" }, { name: "Css 3" }, { name: "HTML 5" }],
+    image: "/assets/work/thumb1.png",
     live: "",
-    github: "",
+    github: "https://github.com/SARVESH-31/React-Blog-Website",
+  },
+  {
+    num: "05",
+    category: "frontend",
+    title: "project 5",
+    description:
+      "A web application that automatically summarizes articles based on the link provided by the user. Simply enter the URL of any article, and the platform will generate a concise summary using advanced API calls. This tool helps users quickly grasp the key points of lengthy articles, saving time while delivering essential information.",
+    stack: [{ name: "React" }, { name: "Css 3" }, { name: "HTML 5" }],
+    image: "/assets/work/thumb2.png",
+    live: "",
+    github: "https://github.com/SARVESH-31/AI-Article-Summarizer",
+  },
+  {
+    num: "06",
+    category: "frontend",
+    title: "project 6",
+    description:
+      "An elegantly designed web application that offers a sleek, intuitive interface for performing basic arithmetic operations with ease.",
+    stack: [{ name: "HTML 5" }, { name: "Css 3" }, { name: "JavaScript" }],
+    image: "/assets/work/thumb3.png",
+    live: "https://sarvesh-31.github.io/Calculator/",
+    github: "https://github.com/SARVESH-31/Calculator",
   },
 ];
 
@@ -89,15 +124,15 @@ const Work = () => {
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
               {/* stack */}
-              <ul className="flex gap-4">
+              <ul className="flex flex-wrap gap-2">
                 {project.stack.map((item, index) => {
-                  return (
-                    <li key={index} className="text-xl text-accent">
-                      {item.name}
-                      {/* remove the last comma */}
-                      {index !== project.stack.length - 1 && ","}
-                    </li>
-                  );
+                return (
+                  <li key={index} className="text-xl text-accent/60">
+                  {item.name}
+                   {/* remove the last comma */}
+                   {index !== project.stack.length - 1 && ","}
+                  </li>
+                );
                 })}
               </ul>
               {/* border */}
@@ -105,7 +140,7 @@ const Work = () => {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live project button */}
-                <Link href={project.live}>
+                <Link href={project.live} target = "_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -118,7 +153,7 @@ const Work = () => {
                   </TooltipProvider>
                 </Link>
                 {/* github project button */}
-                <Link href={project.github}>
+                <Link href={project.github} target = "_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">

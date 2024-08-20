@@ -8,28 +8,28 @@ const services = [
     num: "01",
     title: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+      "Offering expertise in crafting robust and scalable web solutions tailored to meet diverse business needs.",
     href: "",
   },
   {
     num: "02",
     title: "UI/UX Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+      "Creating intuitive and engaging UI/UX designs that enhance user experience and drive effective interaction.",
     href: "",
   },
   {
     num: "03",
-    title: "Logo Design",
+    title: "DevOps",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+      "Implementing efficient DevOps practices to streamline development and deployment processes.",
     href: "",
   },
   {
     num: "04",
-    title: "SEO",
+    title: "Cloud Technology",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+      "Leveraging cloud technology to build scalable, secure, and cost-effective solutions tailored to your needs.",
     href: "",
   },
 ];
